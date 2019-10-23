@@ -1,0 +1,14 @@
+{
+  "name": "ali-oss-action",
+  "version": "0.0.1",
+  "description": "Aliyun OSS Action",
+  "main": "index.js",
+  "repository": "git@github.com:stevenzg/ali-oss-action.git",
+  "author": "stevenzg <guoyinfeng@live.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.2.0",
+    "ali-oss": "^6.1.1",
+    "globby": "^10.0.1"
+  }
+}

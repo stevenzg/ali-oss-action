@@ -1,0 +1,29 @@
+name: 'DeployToAliOSS'
+description: 'Deploy Static Pages to Aliyun OSS'
+inputs:
+  region:
+    description: '<oss region>'
+    required: true
+  accessKeyId:
+    description: '<Your accessKeyId>'
+    required: true
+  accessKeySecret:
+    description: '<Your accessKeySecret>'
+    required: true
+  bucket:
+    description: '<Your bucket name>'
+    required: true
+  bucketPath:
+    description: '<Your directory under bucket>'
+  filePath:
+    description: '<File directory to be uploaded>'
+    required: true
+    default: 'dist'
+outputs:
+  successCount:
+    description: 'Success Count'
+  failCount:
+    description: 'Fail Count'
+runs:
+  using: 'node12'
+  main: 'index.js'
