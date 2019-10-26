@@ -64,6 +64,7 @@ jobs:
           accessKeyId: ${{ secrets.accessKeyId }}
           accessKeySecret: ${{ secrets.accessKeySecret }}
           bucket: ${{ secrets.bucket }}
+          bucketPath: 'bucket sub path'
           filePath: 'dist'
       - name: Deploy Result
         run: echo "${{ steps.DeployOss.outputs.successCount }} success, ${{ steps.DeployOss.outputs.failCount }} fail."

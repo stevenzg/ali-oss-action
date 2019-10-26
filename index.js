@@ -39,7 +39,7 @@ void (async function() {
       const ossTarget = path.join(bucketPath, file)
       const stream = fs.createReadStream(path.join(pageFilesPath, file))
       const result = await client.put(ossTarget, stream, {
-        timeout: 720000
+        timeout: 7200000
       })
       console.log('Result:', result)
       if (result.res.status === 200) {
